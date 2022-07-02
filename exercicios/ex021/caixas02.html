@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px;
+            box-shadow: -4px 4px 9px 0px black;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(119, 119, 119);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        nav {
+            background-color: rgb(129, 128, 128);
+            padding: 3px;
+            box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.459);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            background-image: linear-gradient(to right, #635153, #c50d32);
+            margin-right: 20px;
+            border-radius: 1px;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        
+        div#bola {
+          width: 100px;
+          height: 100px;
+          background-color: white;
+          margin: 10px;
+          border-radius: 50%;
+          color: black;
+          text-align: center bottom;
+           }
+        
+    </style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+         <section id="assuntos">
+              <p>Esportes, Politicas e assuntos</p>
+         </section>
+         <section id="noticias">
+             <article>
+                 <h2>Noticias sobre Brasil</h2>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore debitis dolorem exercitationem accusamus quas repellat similique iste, excepturi harum vitae molestias iusto dignissimos saepe, laudantium vero quia odit sequi a.</p>
+                 <aside>
+                     <p>Artigo escrito por nananana</p>
+                 </aside>
+             </article>
+             <article>
+
+             </article>
+         </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Macanhan</p>
+    </footer>
+    <div id="bola">Ball</div>
+</body>
+</html>

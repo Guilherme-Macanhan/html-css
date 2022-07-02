@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            background-color: lightcyan;
+            color: rgb(179, 30, 30);
+            border: 2px solid black;
+            border-radius: 5px 0px 5px 5px black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            display: block;
+            transition: 1s;
+        }
+
+        div:hover {
+            color: blue;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <div>Passe o mouse para abrir o bloco
+        <p>Bloco01 escondido</p>
+    </div>
+</body>
+</html>
